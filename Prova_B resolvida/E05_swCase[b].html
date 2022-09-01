@@ -1,0 +1,39 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Turno de Trabalho
+    //Peça para o usuário informar em que turno trabalha e considere a seguinte situação:
+    //Se informou "Matutino", retornará a mensagem "O seu turno de trabalho é das 05:00 - 13:00".
+    //Se informou "Vespertino", retornará a mensagem "O seu turno de trabalho é das 13:00 - 22:00".
+    //Se informou "Noturno", retornará a mensagem "O seu turno de trabalho é das 22:00 - 05:00".
+    //Crie também um default que retornará a mensagem "Turno de Trabalho Inválido".
+
+    //Dica: Use M para Matutino, V para Vespertino, N para Noturno.
+
+    //ENTRADA
+    const turno = prompt("Tu trabalha em que truno M para matutino, V para vespertino e N para noturno")
+    let resposta;
+
+    //PROCESSAMENTO
+    switch (turno) {
+        case "M":
+            resposta = "O seu turno de trabalho é das 05:00 - 13:00"
+            break;
+
+        case "V":
+            resposta = "O seu turno de trabalho é das 13:00 - 22:00"
+            break;
+
+        case "N":
+            resposta = "O seu turno de trabalho é das 22:00 - 05:00"
+            break
+
+        default:
+            resposta = "Turno de Trabalho Inválido"
+            break;
+    }
+
+    //SAÍDA
+    document.write(`${resposta}`)
+
+</script>

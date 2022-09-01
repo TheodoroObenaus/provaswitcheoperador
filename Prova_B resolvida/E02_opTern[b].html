@@ -1,0 +1,28 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Tempo Médio
+    //Peça para o usuário informar quanto tempo cada aluno demora para resolver um problema de Programação, utilizando operador ternário. Colete os dados de cinco alunos diferentes e considere o seguinte cenário:
+    //Se o tempo médio for até 2 minutos (inclusive 2), o nível do problema será considerado "INFANTIL".
+    //Se o tempo médio for até 5 minutos (inclusive 5), o nível do problema será considerado "TREINAMENTO".
+    //Se o tempo médio for acima de 5 minutos, o nível do problema será considerado "AMISTOSO".
+
+    //Apresente o tempo médio utilizado pelos alunos e apresente também o nível do problema.
+
+    //ENTRADA
+    const aluno1 = Number(prompt("Quanto tempo leva para terminar um problema de oeprador ternario?"))
+    const aluno2 = Number(prompt("Quanto tempo leva para terminar um problema de oeprador ternario?"))
+    const aluno3 = Number(prompt("Quanto tempo leva para terminar um problema de oeprador ternario?"))
+    const aluno4 = Number(prompt("Quanto tempo leva para terminar um problema de oeprador ternario?"))
+    const aluno5 = Number(prompt("Quanto tempo leva para terminar um problema de oeprador ternario?"))
+    const media = (aluno1 + aluno2 + aluno3 + aluno4 + aluno5) / 5
+    let   resultado ;
+
+    //PROCESSAMENTO
+    (media <= 2) ? resultado = "Infantil"
+    : (media <= 5) ? resultado = "Treinamento"
+    : resultado = "Amistoso"
+    //SAÍDA
+    document.write(`seu nivel é ${resultado}`)
+
+</script>
